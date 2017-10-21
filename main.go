@@ -64,7 +64,8 @@ func ejectDiskImages() {
 	if err != nil {
 		errexit("get disks error")
 	}
-	for _, disk := range disks {
+	for i := len(disks) - 1; i >= 0; i-- {
+		disk := disks[i]
 		isImage, err := isDiskImage(disk)
 		if err != nil {
 			errexit("check disk image error")
@@ -80,8 +81,8 @@ func ejectPhysicalDisks() {
 	if err != nil {
 		errexit("get disks error")
 	}
-	for _, disk := range disks {
-		eject(disk)
+	for i := len(disks) - 1; i >= 0; i-- {
+		eject(disks[i])
 	}
 }
 

@@ -5,7 +5,7 @@ The **one and only** purpose of Disk Eject is to eject all external disk(s) from
 ## Install
 
 ```
-go get https://github.com/jaux/diskeject
+go get github.com/jaux/diskeject
 ```
 
 ## Run
@@ -13,6 +13,13 @@ go get https://github.com/jaux/diskeject
 ```
 $GOPATH/bin/diskeject
 ```
+
+Or, if you have added `$GOPATH/bin` to your `$PATH`, you can simply run
+
+```
+diskeject
+```
+
 
 
 ## License

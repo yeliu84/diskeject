@@ -15,4 +15,6 @@ $GOPATH/bin/diskeject
 ```
 
 
-### [MIT License](/LICENSE)
+## License
+
+[MIT](/LICENSE)

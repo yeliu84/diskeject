@@ -2,5 +2,17 @@
 
 The **one and only** purpose of Disk Eject is to eject all external disk(s) from macOS.
 
+## Install
 
-## [MIT License](/LICENSE)
+```
+go get https://github.com/jaux/diskeject
+```
+
+## Run
+
+```
+$GOPATH/bin/diskeject
+```
+
+
+### [MIT License](/LICENSE)

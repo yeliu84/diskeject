@@ -13,12 +13,8 @@ type diskList struct {
 	WholeDisks []string `plist:"WholeDisks"`
 }
 
-func errprint(msg string) {
-	fmt.Fprintf(os.Stderr, "%s", msg)
-}
-
 func errexit(msg string) {
-	errprint(msg)
+	fmt.Fprintf(os.Stderr, "%s", msg)
 	os.Exit(1)
 }
 
